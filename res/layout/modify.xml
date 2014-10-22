@@ -1,0 +1,33 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hell" >
+ 
+    <TextView
+        
+        android:id="@+id/texts"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text=" TOUCH TO REPLACE "
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#66FF33"
+        
+        />
+    
+    
+         <ListView
+              android:id="@+id/li"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:divider="@android:color/transparent"
+              android:dividerHeight="15.0sp"
+              >
+         </ListView>
+ 
+</LinearLayout>
+
+
