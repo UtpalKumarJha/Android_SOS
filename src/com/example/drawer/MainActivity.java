@@ -123,31 +123,7 @@ public class MainActivity extends Activity
         return super.onPrepareOptionsMenu(menu);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-         // The action bar home/up action should open or close the drawer.
-         // ActionBarDrawerToggle will take care of this.
-        if (mDrawerToggle.onOptionsItemSelected(item)) {
-            return true;
-        }
-        // Handle action buttons
-        switch(item.getItemId()) {
-        case R.id.action_websearch:
-            // create intent to perform web search for this planet
-            Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-            intent.putExtra(SearchManager.QUERY, getActionBar().getTitle());
-            // catch event that there's no activity to handle intent
-            if (intent.resolveActivity(getPackageManager()) != null) {
-                startActivity(intent);
-            } else {
-               // Toast.makeText(this, R.string.ap, Toast.LENGTH_LONG).show();
-            }
-            return true;
-        default:
-            return super.onOptionsItemSelected(item);
-        }
-    }
+    
 
     /* The click listner for ListView in the navigation drawer */
     private class DrawerItemClickListener implements ListView.OnItemClickListener
