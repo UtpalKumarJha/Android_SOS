@@ -3,14 +3,11 @@ package com.example.drawer;
 
 
 
-import android.graphics.Typeface;
 import java.util.Locale;
-
+import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.app.SearchManager;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -30,7 +27,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 
-public class MainActivity extends Activity 
+public class MainActivity extends ActionBarActivity
 {
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
