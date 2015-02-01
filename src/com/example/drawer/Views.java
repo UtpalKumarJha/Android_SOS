@@ -15,8 +15,6 @@ import android.widget.TextView;
 public class Views extends Fragment
 {
 	View rootView;
-	
-	
 	DBADapter db5;
 	
 	TextView tt1,tt2,tt3,tt4,tt5,tt6,tt7,tt8,tt9,tt10,tt11,tt12;
@@ -123,7 +121,5 @@ public class Views extends Fragment
 		db5.close();
 		super.onDestroyView();
 	}
-	
-	
-	
+
 }

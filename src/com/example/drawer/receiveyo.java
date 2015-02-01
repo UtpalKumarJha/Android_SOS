@@ -1,8 +1,6 @@
 package com.example.drawer;
 
 
-
-import android.graphics.Typeface;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -27,9 +25,6 @@ public class receiveyo extends BroadcastReceiver
                 
 	}
 
-	
-	
-
 	private void somehow(Context arg0) 
 	{
 		
@@ -53,8 +48,7 @@ public class receiveyo extends BroadcastReceiver
 			if(gps[2]==1)
 			{
 				v="This is my last known gps location\n" +"Lattitude : "+ String.valueOf(gps[0])+"\n"+"Longitude : "+String.valueOf(gps[1]);
-			}
-		
+			}		
 		Cursor cr = db6.getAllRows();
 		 if(cr.moveToFirst())
 	        {
@@ -76,7 +70,5 @@ public class receiveyo extends BroadcastReceiver
 		 db6.close();
 		 
 	}
-
-	
 
 }

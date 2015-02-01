@@ -1,8 +1,5 @@
 package com.example.drawer;
 
-
-
-import android.graphics.Typeface;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
@@ -15,7 +12,6 @@ import android.widget.RemoteViews;
 public class create_widget extends AppWidgetProvider
 {
 
-	//DBADapter db5;
 	Button bt;
 	RemoteViews jj;
 	
@@ -51,6 +47,5 @@ public class create_widget extends AppWidgetProvider
 	    AppWidgetManager manager = AppWidgetManager.getInstance(context);
 	    manager.updateAppWidget(myWidget, remoteViews);		
 	 }
-	
 	
 }

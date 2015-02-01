@@ -1,9 +1,5 @@
 package com.example.drawer;
 
-
-
-
-
 import android.graphics.Typeface;
 import android.app.Activity;
 import android.app.Fragment;
@@ -192,14 +188,9 @@ public class add extends Fragment implements OnClickListener
 	
 	public void yo() 
 	{
-		
-		// startActivityForResult(new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI),PICK_CONTACT_REQUEST);
-		
-		
 		Intent pickContactIntent = new Intent(Intent.ACTION_PICK, Uri.parse("content://contacts"));
-	    pickContactIntent.setType(Phone.CONTENT_TYPE); // Show user only contacts w/ phone numbers
+	    pickContactIntent.setType(Phone.CONTENT_TYPE); 
 	    startActivityForResult(pickContactIntent, PICK_CONTACT_REQUEST);
-	    
 	}
 
 	
@@ -316,7 +307,5 @@ public class add extends Fragment implements OnClickListener
 		db3.close();
 		db4.close();
 	}
-	
-	
 	
 }

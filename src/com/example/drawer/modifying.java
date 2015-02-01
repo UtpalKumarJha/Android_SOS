@@ -10,8 +10,6 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Color;
-import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -58,10 +56,6 @@ public class modifying extends Fragment
 		numbers= new ArrayList<String>();
 		face=Typeface.createFromAsset(getActivity().getAssets(),
                 "fonts/HelveNeuExt.ttf");
-		
-		
-		
-		
 		jeez();
 		
 		return rootview;
@@ -141,7 +135,7 @@ lv.setOnItemClickListener(new OnItemClickListener()
 	private void go()
 	{
 		Intent pickContactIntent = new Intent(Intent.ACTION_PICK, Uri.parse("content://contacts"));
-	    pickContactIntent.setType(Phone.CONTENT_TYPE); // Show user only contacts w/ phone numbers
+	    pickContactIntent.setType(Phone.CONTENT_TYPE); 
 	    startActivityForResult(pickContactIntent, PICK_CONTACT_REQUEST);
 	}
 	
@@ -222,10 +216,6 @@ lv.setOnItemClickListener(new OnItemClickListener()
          }
 	}    
 	        	
-	        	
-                
-            	
-
 	
 	@Override
 	public void onDestroyView() 
@@ -233,7 +223,5 @@ lv.setOnItemClickListener(new OnItemClickListener()
 		db11.close();
 		super.onDestroyView();
 	}
-	
-	
-   
+
 }
