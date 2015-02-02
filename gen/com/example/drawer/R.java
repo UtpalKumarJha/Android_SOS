@@ -1093,11 +1093,12 @@ containing a value of this type.
         public static final int pb=0x7f020061;
         public static final int plain=0x7f020062;
         public static final int round_button=0x7f020063;
-        public static final int soap=0x7f020064;
-        public static final int soo=0x7f020065;
-        public static final int sos=0x7f020066;
-        public static final int sweep=0x7f020067;
-        public static final int y=0x7f020068;
+        public static final int so=0x7f020064;
+        public static final int soap=0x7f020065;
+        public static final int soo=0x7f020066;
+        public static final int sos=0x7f020067;
+        public static final int sweep=0x7f020068;
+        public static final int y=0x7f020069;
     }
     public static final class id {
         public static final int action_bar=0x7f06001c;

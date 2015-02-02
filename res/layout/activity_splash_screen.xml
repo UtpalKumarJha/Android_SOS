@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/splash_screen_relative_layout"
-    android:background="@drawable/sos"
+    android:background="@drawable/so"
     >
 
     

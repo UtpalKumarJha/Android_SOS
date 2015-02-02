@@ -9,10 +9,10 @@
     <TextView
         android:id="@+id/idyo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="YOUR DEFAULT MESSAGE"
+        android:layout_height="60dp"
+        android:text="Your Custom Message"
         android:textStyle="bold"
-        android:textSize="15dp"
+        android:textSize="35dp"
         
        />
     
@@ -29,10 +29,9 @@
     <TextView
         android:id="@+id/id1"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:text="MESSAGE SENT TO :"
+        android:layout_height="60dp"
+        android:text="Message sent to following contacts along with GPS location"
         android:textStyle="bold"
-       
         android:layout_marginTop="10dp"
         android:textSize="20dp"
        />

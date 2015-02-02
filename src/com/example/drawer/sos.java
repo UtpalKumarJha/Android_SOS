@@ -25,9 +25,9 @@ public class sos extends Fragment implements OnClickListener,LocationListener
 	View rootView;
 
 	DBADapter db4;
-	String s="Press to send SOS";
+	String s="Need Help!";
 	Location location;
-	TextView tva,tvb,tvc,tvd,tve,tvf,tvg;
+	TextView tva,tvb,tvc,tvd,tve,tvf,tvg,tvh;
 	int lat,lng,mark;
 	Bitmap bitmap,circleBitmap;
 	EditText ghs;
@@ -52,8 +52,9 @@ public class sos extends Fragment implements OnClickListener,LocationListener
 		tvc = (TextView)rootView.findViewById(R.id.id4);
 		tvd = (TextView)rootView.findViewById(R.id.id5);
 		tve = (TextView)rootView.findViewById(R.id.id6);
-		
-		
+		tvh = (TextView)rootView.findViewById(R.id.id1);
+	    	
+		tvh.setVisibility(View.GONE);
 	
 		Typeface face=Typeface.createFromAsset(getActivity().getAssets(),
                 "fonts/HelveNeuExt.ttf");
@@ -93,6 +94,7 @@ public class sos extends Fragment implements OnClickListener,LocationListener
 	@Override
 	public void onClick(View arg0) 
 	{
+		tvh.setVisibility(View.VISIBLE);
 	   if(arg0.getId()==R.id.imageView1)
 	   {
 		   s = ghs.getText().toString(); 

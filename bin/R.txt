@@ -248,11 +248,12 @@ int drawable n 0x7f020060
 int drawable pb 0x7f020061
 int drawable plain 0x7f020062
 int drawable round_button 0x7f020063
-int drawable soap 0x7f020064
-int drawable soo 0x7f020065
-int drawable sos 0x7f020066
-int drawable sweep 0x7f020067
-int drawable y 0x7f020068
+int drawable so 0x7f020064
+int drawable soap 0x7f020065
+int drawable soo 0x7f020066
+int drawable sos 0x7f020067
+int drawable sweep 0x7f020068
+int drawable y 0x7f020069
 int id action_bar 0x7f06001c
 int id action_bar_activity_content 0x7f060015
 int id action_bar_container 0x7f06001b
