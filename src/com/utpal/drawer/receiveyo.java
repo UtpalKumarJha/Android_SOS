@@ -17,16 +17,16 @@ public class receiveyo extends BroadcastReceiver
 	@Override
 	public void onReceive(Context arg0, Intent arg1) 
 	{
-        if(arg1.getAction().equals("hellyeahh"))
-        { 	
-        	
+		//Toast.makeText(arg0, "HELLOOOOOO",Toast.LENGTH_LONG).show();
+        if(arg1.getAction().equals("hellyeah"))
+        { 	        	
         	somehow(arg0);
         }
-                
 	}
 
 	private void somehow(Context arg0) 
 	{
+		//Toast.makeText(arg0, "HELLOOOOOO",Toast.LENGTH_LONG).show();
 		
 		DBADapter db6;
 		db6 = new DBADapter(arg0);

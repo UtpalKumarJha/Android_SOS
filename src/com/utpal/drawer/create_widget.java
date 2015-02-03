@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Button;
 import android.widget.RemoteViews;
+import android.widget.Toast;
 
 public class create_widget extends AppWidgetProvider
 {
@@ -21,18 +22,17 @@ public class create_widget extends AppWidgetProvider
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
 			int[] appWidgetIds)
     {
-
 		RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.widget_layout);
 		remoteViews.setOnClickPendingIntent(R.id.button3, buildButtonPendingIntent(context));       
-        remoteViews.setOnClickPendingIntent(R.id.button1, buildButtonPendingIntent3(context));
-        
+        remoteViews.setOnClickPendingIntent(R.id.button1, buildButtonPendingIntent3(context));   
 		pushWidgetUpdate(context, remoteViews);
 	}
 
 	public static PendingIntent buildButtonPendingIntent(Context context)
     {
 		Intent intent = new Intent();
-	    intent.setAction("hellyeahh");
+	    intent.setAction("hellyeah");
+	    //Toast.makeText(context, "should display", Toast.LENGTH_LONG).show();
 	    return PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 	}
 	
