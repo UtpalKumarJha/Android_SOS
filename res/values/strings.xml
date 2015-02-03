@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <string name="app_name">APP TO THE RESCUE</string>
+    <string name="app_name">RESCUE APP</string>
     <string-array name="WOMEN">
         <item>SENDSOS</item>
         <item>VIEW</item>
@@ -28,4 +28,6 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="action_websearch">Web search</string>
     <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3127538678981681/3995638667</string>
+    
 </resources>
