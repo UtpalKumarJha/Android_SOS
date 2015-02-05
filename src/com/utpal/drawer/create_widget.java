@@ -32,7 +32,6 @@ public class create_widget extends AppWidgetProvider
     {
 		Intent intent = new Intent();
 	    intent.setAction("hellyeah");
-	    //Toast.makeText(context, "should display", Toast.LENGTH_LONG).show();
 	    return PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 	}
 	
